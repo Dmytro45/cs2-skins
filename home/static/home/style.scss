@@ -1,0 +1,528 @@
+body {
+    background-color: #1D2328;
+    margin: 0;
+    font-family: Arial;
+    
+}
+.colortext {
+    color: #2FAF88;
+}
+.head {
+    background-color: #282F36;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 125px;
+    
+}
+
+.logo {
+    margin: 25px;
+}
+.skin {
+    font-weight: 700;
+    color: white;
+    font-size: large;
+    padding-bottom: 5px;
+}
+
+.Rifles{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: center;
+
+    &__text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__item-preview{
+        background-color: #282F36;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+        font-size: x-large;
+        
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        background-color: #20282D;
+        margin-right: 100px;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    &__item-description{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: #ABAEB0;
+        font-size: small;
+    }
+    
+}
+
+
+
+
+
+.Sniper_Rifles{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: center;
+
+    &__text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__item-preview{
+        background-color: #282F36;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        background-color: #20282D;
+        margin-right: 100px;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    &__item-description{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: #ABAEB0;
+        font-size: small;
+    }
+}
+
+
+
+
+.Pistols{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: center;
+
+    &_text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__item-preview{
+        background-color: #282F36;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        background-color: #20282D;
+        margin-right: 100px;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    &__item-description{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: #ABAEB0;
+        font-size: small;
+    }
+    
+}
+
+
+
+
+.Knives{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: center;
+
+    &_text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__item-preview{
+        background-color: #282F36;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        background-color: #20282D;
+        margin-right: 100px;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    &__item-description{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: #ABAEB0;
+        font-size: small;
+    }
+}
+
+
+
+
+
+.Gloves{
+    display: flex;
+    flex-direction: row;
+    margin-left: 75px;
+    justify-content: center;
+    &_text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__item-preview{
+        background-color: #282F36;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        font-size: x-large;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium';
+    }
+    &__item{
+        display:flex;
+        flex-direction: column;
+        background-color: #20282D;
+        margin-right: 100px;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    &__item-description{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        color: #ABAEB0;
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.anketa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__image{
+        margin-right: 50px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C;
+        padding-left: 20px;
+        color: #BCBEBF;   
+        align-items: start;
+        justify-content: space-around;
+        width: 425px;
+        margin-right: 40px;
+        border-radius: 10px;
+        height: 460px;
+    }
+    &_txt {
+        font-size: large;
+    }
+    &__sent{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        color: #AFB1B3;   
+        align-items: start;
+        width: 425px;
+        font-size: small;
+        height: 475px;
+    }
+}
+
+.item1 {
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+input {
+    background-color: #2C3135;
+    color: white;
+    border-radius: 11px;
+    height: 40px;
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.coment {
+    background-color: #2C3135;
+    color: white;
+    border-radius: 11px;
+    color: white;
+    height: 175px;
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #33613E;
+    border-radius: 11px;
+    height: 50px;
+    width: 440px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    color: white;
+    transition: background-color 0.5s ease;
+    font-size: medium;
+    font-weight: 700;
+}
+.btn:hover {
+    background-color: #218538;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #20282D;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    &2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+        background-color: #20282D;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+    &__txt1 {
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C; 
+        padding-left: 20px;
+        color: #C5C6C6;   
+        align-items: start;
+        padding-top: 20px;
+        height: 300px;
+        padding-right: 50px;
+        font-weight: 300;
+        font-size: large;
+        width: 300px;
+        border-radius: 15px;
+    }
+    &__txt2 {
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C; 
+        padding-left: 20px;
+        color: #C5C6C6;   
+        align-items: start;
+        padding-top: 20px;
+        height: 300px;
+        padding-right: 50px;
+        font-weight: 300;
+        font-size: large;
+        margin-left: 100px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    &__txt3 {
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C; 
+        padding-left: 20px;
+        color: #C5C6C6;   
+        align-items: start;
+        padding-top: 20px;
+        height: 300px;
+        padding-right: 50px;
+        font-weight: 300;
+        font-size: large;
+        width: 300px;
+        border-radius: 15px;
+    }
+    &__txt4 {
+        display: flex;
+        flex-direction: column;
+        background-color: #15191C; 
+        padding-left: 20px;
+        color: #C5C6C6;   
+        align-items: start;
+        padding-top: 20px;
+        height: 300px;
+        padding-right: 50px;
+        font-weight: 300;
+        font-size: large;
+        margin-left: 100px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    &__image {
+        background-color: #20282D;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+.text1 {
+    margin-bottom: 20px;
+}
+
+.under {
+    background-color: #15191C;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    &__txt1 {
+        display: flex;
+        flex-direction: column;   
+        padding-left: 20px; 
+        padding-top: 20px;
+        margin-right: 300px;
+        margin-left: 50px;
+    }
+    &__txt2 {
+        display: flex;
+        flex-direction: column;   
+        padding-left: 20px; 
+        padding-top: 20px;
+        margin-right: 300px;
+    }
+    &__txt3 {
+        display: flex;
+        flex-direction: column;   
+        padding-left: 20px; 
+        padding-top: 20px;
+    }
+}
+
+.txt1 {
+    padding-bottom: 20px;
+    color: #585A5C;
+    font-size: small;
+}
+
+.txt2 {
+    padding-bottom: 20px;
+    color: #585A5C;
+    font-size: small;
+}
+
+.txt3 {
+    padding-bottom: 20px;
+    color: #585A5C;
+    font-size: small;
+}
+.item {
+    padding-bottom: 20px;
+    color: white;
+}

@@ -330,14 +330,13 @@ input {
   cursor: pointer;
 }
 
-.feature {
+.feature1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #20282D;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .feature2 {
   display: flex;
@@ -345,6 +344,14 @@ input {
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+  background-color: #20282D;
+  padding-bottom: 50px;
+}
+.feature3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   background-color: #20282D;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -363,12 +370,13 @@ input {
   padding-left: 20px;
   color: #C5C6C6;
   align-items: start;
-  padding-top: 20px;
-  height: 300px;
+  justify-content: center;
   padding-right: 50px;
   font-weight: 300;
-  font-size: large;
-  width: 300px;
+  font-size: larger;
+  width: 400px;
+  margin-right: 75px;
+  height: 200px;
   border-radius: 15px;
 }
 .feature__txt2 {
@@ -377,14 +385,14 @@ input {
   background-color: #15191C;
   padding-left: 20px;
   color: #C5C6C6;
+  justify-content: center;
   align-items: start;
-  padding-top: 20px;
-  height: 300px;
   padding-right: 50px;
   font-weight: 300;
-  font-size: large;
-  margin-left: 100px;
-  width: 300px;
+  font-size: larger;
+  margin-left: 75px;
+  width: 400px;
+  height: 200px;
   border-radius: 15px;
 }
 .feature__txt3 {
@@ -393,13 +401,14 @@ input {
   background-color: #15191C;
   padding-left: 20px;
   color: #C5C6C6;
+  justify-content: center;
   align-items: start;
-  padding-top: 20px;
-  height: 300px;
   padding-right: 50px;
   font-weight: 300;
-  font-size: large;
-  width: 300px;
+  font-size: larger;
+  width: 400px;
+  height: 200px;
+  margin-right: 75px;
   border-radius: 15px;
 }
 .feature__txt4 {
@@ -408,21 +417,55 @@ input {
   background-color: #15191C;
   padding-left: 20px;
   color: #C5C6C6;
+  justify-content: center;
   align-items: start;
-  padding-top: 20px;
-  height: 300px;
   padding-right: 50px;
   font-weight: 300;
-  font-size: large;
+  font-size: larger;
   margin-left: 100px;
-  width: 300px;
+  width: 400px;
+  height: 200px;
+  margin-left: 75px;
   border-radius: 15px;
 }
-.feature__image {
+.feature__txt5 {
+  display: flex;
+  flex-direction: column;
+  background-color: #15191C;
+  padding-left: 20px;
+  color: #C5C6C6;
+  justify-content: center;
+  align-items: start;
+  padding-right: 50px;
+  font-weight: 300;
+  font-size: larger;
+  width: 350px;
+  height: 200px;
+  margin-right: 50px;
+  border-radius: 15px;
+}
+.feature__txt6 {
+  display: flex;
+  flex-direction: column;
+  background-color: #15191C;
+  padding-left: 20px;
+  color: #C5C6C6;
+  justify-content: center;
+  align-items: start;
+  padding-right: 50px;
+  font-weight: 300;
+  font-size: larger;
+  width: 350px;
+  height: 200px;
+  margin-left: 50px;
+  border-radius: 15px;
+}
+.feature__image{
   background-color: #20282D;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
 .text1 {

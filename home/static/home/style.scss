@@ -473,15 +473,17 @@ input {
 
 
 
-.text1 {
-    margin-bottom: 20px;
-}
+
 
 .under {
     background-color: #15191C;
     display: flex;
     flex-direction: row;
     color: white;
+
+    &__text1 {
+        margin-bottom: 20px;
+    }
     &__txt1 {
         display: flex;
         flex-direction: column;   
@@ -503,26 +505,26 @@ input {
         padding-left: 20px; 
         padding-top: 20px;
     }
+    &__txt4 {
+        padding-bottom: 20px;
+        color: #585A5C;
+        font-size: small;
+    }
+    
+    &__txt5 {
+        padding-bottom: 20px;
+        color: #585A5C;
+        font-size: small;
+    }
+    
+    &__txt6 {
+        padding-bottom: 20px;
+        color: #585A5C;
+        font-size: small;
+    }
+    &__item {
+        padding-bottom: 20px;
+        color: white;
+    }
 }
 
-.txt1 {
-    padding-bottom: 20px;
-    color: #585A5C;
-    font-size: small;
-}
-
-.txt2 {
-    padding-bottom: 20px;
-    color: #585A5C;
-    font-size: small;
-}
-
-.txt3 {
-    padding-bottom: 20px;
-    color: #585A5C;
-    font-size: small;
-}
-.item {
-    padding-bottom: 20px;
-    color: white;
-}

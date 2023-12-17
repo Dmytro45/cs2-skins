@@ -265,7 +265,6 @@ body {
 .anketa__sent {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
   color: #AFB1B3;
   align-items: start;
   width: 425px;
@@ -341,6 +340,7 @@ body {
   justify-content: center;
   background-color: #20282D;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .feature__2 {
   display: flex;
@@ -349,6 +349,7 @@ body {
   justify-content: center;
   margin-bottom: 100px;
   background-color: #20282D;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .feature__3 {
@@ -378,9 +379,10 @@ body {
   padding-top: 20px;
   height: 200px;
   padding-right: 50px;
+  margin-right: 150px;
   font-weight: 300;
   font-size: large;
-  width: 300px;
+  width: 350px;
   border-radius: 15px;
 }
 .feature__txt2 {
@@ -396,8 +398,8 @@ body {
   padding-right: 50px;
   font-weight: 300;
   font-size: large;
-  margin-left: 100px;
-  width: 300px;
+  margin-left: 150px;
+  width: 350px;
   border-radius: 15px;
 }
 .feature__txt3 {
@@ -411,9 +413,10 @@ body {
   padding-top: 20px;
   height: 200px;
   padding-right: 50px;
+  margin-right: 150px;
   font-weight: 300;
   font-size: large;
-  width: 300px;
+  width: 350px;
   border-radius: 15px;
 }
 .feature__txt4 {
@@ -429,40 +432,8 @@ body {
   padding-right: 50px;
   font-weight: 300;
   font-size: large;
-  margin-left: 100px;
-  width: 300px;
-  border-radius: 15px;
-}
-.feature__txt5 {
-  display: flex;
-  flex-direction: column;
-  background-color: #15191C;
-  padding-left: 20px;
-  color: #C5C6C6;
-  align-items: start;
-  justify-content: center;
-  padding-right: 50px;
-  font-weight: 300;
-  font-size: larger;
+  margin-left: 150px;
   width: 350px;
-  height: 200px;
-  margin-right: 50px;
-  border-radius: 15px;
-}
-.feature__txt6 {
-  display: flex;
-  flex-direction: column;
-  background-color: #15191C;
-  padding-left: 20px;
-  color: #C5C6C6;
-  align-items: start;
-  justify-content: center;
-  padding-right: 50px;
-  font-weight: 300;
-  font-size: larger;
-  width: 350px;
-  height: 200px;
-  margin-left: 50px;
   border-radius: 15px;
 }
 .feature__image {
@@ -536,10 +507,114 @@ body {
   .container {
     max-width: 1140px;
   }
+  .anketa {
+    align-items: center;
+    flex-direction: column;
+  }
+  .anketa__image {
+    margin-bottom: 30px;
+  }
+  .anketa__text2 {
+    margin-bottom: 30px;
+  }
+  .anketa__input {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feature__1 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature__2 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature__3 {
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature__image {
+    margin-bottom: 30px;
+  }
+  .feature__txt1 {
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feature__txt2 {
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feature__txt3 {
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .feature__txt4 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .under {
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .under__txt1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .under__txt2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .under__txt3 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
+  }
+  .Rifles {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Rifles__item {
+    margin-bottom: 30px;
+  }
+  .Sniper_Rifles {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Sniper_Rifles__item {
+    margin-bottom: 30px;
+  }
+  .Pistols {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Pistols__item {
+    margin-bottom: 30px;
+  }
+  .Knives {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Knives__item {
+    margin-bottom: 30px;
+  }
+  .Gloves {
+    align-items: center;
+    flex-direction: column;
+  }
+  .Gloves__item {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 991px) {

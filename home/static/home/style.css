@@ -329,8 +329,6 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #20282D;
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin-bottom: 100px;
 }
 .feature__1 {
@@ -347,10 +345,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
   background-color: #20282D;
-  padding-top: 50px;
   padding-bottom: 50px;
+  padding-top: 50px;
 }
 .feature__3 {
   display: flex;
@@ -359,7 +356,6 @@ body {
   justify-content: center;
   background-color: #20282D;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .feature__text {
   color: white;
@@ -510,31 +506,77 @@ body {
   .anketa {
     align-items: center;
     flex-direction: column;
+    margin-left: 160px;
   }
   .anketa__image {
     margin-bottom: 30px;
+    margin-right: 150px;
   }
   .anketa__text2 {
     margin-bottom: 30px;
+    margin-right: 160px;
+    width: 350px;
   }
   .anketa__input {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 30px;
+    width: 340px;
+  }
+  .anketa__coment {
+    margin-left: 10px;
+    margin-right: 30px;
+    width: 340px;
+  }
+  .anketa__btn {
+    margin-left: 10px;
+    margin-right: 30px;
+    width: 365px;
+  }
+  .anketa__sent {
+    margin-right: 120px;
   }
   .feature__1 {
     align-items: center;
     flex-direction: column;
+    margin-left: 50px;
+    padding-left: 20px;
+  }
+  .feature__1 .feature__txt1 {
+    width: 290px;
+    margin-right: 70px;
+  }
+  .feature__1 .feature__txt2 {
+    width: 290px;
+    margin-right: 70px;
   }
   .feature__2 {
     align-items: center;
     flex-direction: column;
+    margin-left: 50px;
+    padding-left: 20px;
+  }
+  .feature__2 .feature__txt3 {
+    width: 290px;
+    margin-right: 70px;
+  }
+  .feature__2 .feature__txt4 {
+    width: 290px;
+    margin-right: 70px;
   }
   .feature__3 {
     align-items: center;
     flex-direction: column;
+    margin-left: 150px;
+    padding-right: 100px;
+    padding-left: 50px;
+    margin-bottom: 50px;
   }
-  .feature__image {
+  .feature__3 .feature__image {
     margin-bottom: 30px;
+    margin-left: 170px;
+    padding-right: 100px;
+    padding-left: 50px;
+    width: 7000px;
   }
   .feature__txt1 {
     margin-bottom: 30px;
@@ -560,6 +602,8 @@ body {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   .under__txt1 {
     margin-left: 0px;
@@ -581,12 +625,24 @@ body {
   .container {
     max-width: 960px;
   }
+  .head {
+    align-items: center;
+    width: 350px;
+    padding-right: 50px;
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  .head .nav a {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
   .Rifles {
     align-items: center;
     flex-direction: column;
   }
   .Rifles__item {
     margin-bottom: 30px;
+    margin-right: 75px;
   }
   .Sniper_Rifles {
     align-items: center;
@@ -594,6 +650,7 @@ body {
   }
   .Sniper_Rifles__item {
     margin-bottom: 30px;
+    margin-right: 75px;
   }
   .Pistols {
     align-items: center;
@@ -601,6 +658,7 @@ body {
   }
   .Pistols__item {
     margin-bottom: 30px;
+    margin-right: 75px;
   }
   .Knives {
     align-items: center;
@@ -608,6 +666,7 @@ body {
   }
   .Knives__item {
     margin-bottom: 30px;
+    margin-right: 75px;
   }
   .Gloves {
     align-items: center;
@@ -615,6 +674,7 @@ body {
   }
   .Gloves__item {
     margin-bottom: 30px;
+    margin-right: 75px;
   }
 }
 @media (max-width: 991px) {

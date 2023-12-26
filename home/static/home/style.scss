@@ -23,7 +23,6 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 125px;
-    
 }
 
 .logo {
@@ -39,9 +38,13 @@ body {
 .Rifles{
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
-    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 
+
+    &__item-container{
+        width: 33.3333%;
+    }
     &__text {
         color: white;
         display: flex;
@@ -59,15 +62,18 @@ body {
         font-weight: 600;
         font-family: 'Franklin Gothic Medium';
         font-size: x-large;
+        img{
+            width: 100%;
+        }
         
     }
     &__item{
         display:flex;
         flex-direction: column;
         background-color: #20282D;
-        margin-right: 100px;
         padding: 10px;
-        width: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
     }
     
     &__item-description{
@@ -87,13 +93,18 @@ body {
 .Sniper_Rifles{
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
-    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 
+
+    &__item-container{
+        width: 33.3333%;
+    }
     &__text {
         color: white;
         display: flex;
         justify-content: center;
+        font-style: normal;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -103,17 +114,21 @@ body {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        font-size: x-large;
         font-weight: 600;
         font-family: 'Franklin Gothic Medium';
+        font-size: x-large;
+        img{
+            width: 100%;
+        }
+        
     }
     &__item{
         display:flex;
         flex-direction: column;
         background-color: #20282D;
-        margin-right: 100px;
         padding: 10px;
-        width: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
     }
     
     &__item-description{
@@ -123,6 +138,7 @@ body {
         color: #ABAEB0;
         font-size: small;
     }
+    
 }
 
 
@@ -131,13 +147,17 @@ body {
 .Pistols{
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
-    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 
-    &_text {
+    &__item-container{
+        width: 33.3333%;
+    }
+    &__text {
         color: white;
         display: flex;
         justify-content: center;
+        font-style: normal;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -147,17 +167,21 @@ body {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        font-size: x-large;
         font-weight: 600;
         font-family: 'Franklin Gothic Medium';
+        font-size: x-large;
+        img{
+            width: 100%;
+        }
+        
     }
     &__item{
         display:flex;
         flex-direction: column;
         background-color: #20282D;
-        margin-right: 100px;
         padding: 10px;
-        width: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
     }
     
     &__item-description{
@@ -176,13 +200,17 @@ body {
 .Knives{
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
-    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
 
-    &_text {
+    &__item-container{
+        width: 33.3333%;
+    }
+    &__text {
         color: white;
         display: flex;
         justify-content: center;
+        font-style: normal;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -192,17 +220,21 @@ body {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        font-size: x-large;
         font-weight: 600;
         font-family: 'Franklin Gothic Medium';
+        font-size: x-large;
+        img{
+            width: 100%;
+        }
+        
     }
     &__item{
         display:flex;
         flex-direction: column;
         background-color: #20282D;
-        margin-right: 100px;
         padding: 10px;
-        width: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
     }
     
     &__item-description{
@@ -212,6 +244,7 @@ body {
         color: #ABAEB0;
         font-size: small;
     }
+    
 }
 
 
@@ -221,12 +254,17 @@ body {
 .Gloves{
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
-    justify-content: center;
-    &_text {
+    align-items: center;
+    margin-left: 50px;
+
+    &__item-container{
+        width: 33.3333%;
+    }
+    &__text {
         color: white;
         display: flex;
         justify-content: center;
+        font-style: normal;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -236,17 +274,21 @@ body {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        font-size: x-large;
         font-weight: 600;
         font-family: 'Franklin Gothic Medium';
+        font-size: x-large;
+        img{
+            width: 100%;
+        }
+        
     }
     &__item{
         display:flex;
         flex-direction: column;
         background-color: #20282D;
-        margin-right: 100px;
         padding: 10px;
-        width: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
     }
     
     &__item-description{
@@ -256,17 +298,8 @@ body {
         color: #ABAEB0;
         font-size: small;
     }
+    
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -274,15 +307,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    &__item-container{
+        width: 33.3333%;
+        margin-right: 40px;
+    }
     &__text {
         color: white;
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
         margin-top: 20px;
-    }
-    &__image{
-        margin-right: 50px;
     }
     &__text2{
         display: flex;
@@ -293,7 +327,6 @@ body {
         align-items: start;
         justify-content: space-around;
         width: 425px;
-        margin-right: 40px;
         border-radius: 10px;
         height: 460px;
     }
@@ -382,16 +415,14 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: #20282D;
         padding-top: 50px;
         padding-bottom: 50px;
-      }
+    }
     &__2 {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: #20282D;
         padding-bottom: 50px;
         padding-top: 50px;
     }
@@ -400,7 +431,6 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: #20282D;
         padding-top: 50px;
       }
     &__text {
@@ -423,7 +453,7 @@ body {
         padding-top: 20px;
         height: 200px;
         padding-right: 50px;
-        margin-right: 150px;
+        margin-right: 75px;
         font-weight: 300;
         font-size: large;
         width: 350px;
@@ -442,7 +472,7 @@ body {
         padding-right: 50px;
         font-weight: 300;
         font-size: large;
-        margin-left: 150px;
+        margin-left: 75px;
         width: 350px;
         border-radius: 15px;
     }
@@ -457,7 +487,7 @@ body {
         padding-top: 20px;
         height: 200px;
         padding-right: 50px;
-        margin-right: 150px;
+        margin-right: 75px;
         font-weight: 300;
         font-size: large;
         width: 350px;
@@ -476,7 +506,7 @@ body {
         padding-right: 50px;
         font-weight: 300;
         font-size: large;
-        margin-left: 150px;
+        margin-left: 75px;
         width: 350px;
         border-radius: 15px;
     }
@@ -503,6 +533,10 @@ body {
     display: flex;
     flex-direction: row;
     color: white;
+    
+    &__item-container{
+        width: 33.3333%;
+    }
 
     &__text1 {
         margin-bottom: 20px;
@@ -567,127 +601,22 @@ body {
     .container {
         max-width: 1140px;
     }    
-
-    .anketa{
-        align-items: center;
-        flex-direction: column;
-        margin-left: 160px;
-    }
-    .anketa__image{
-        margin-bottom: 30px;
-        margin-right: 150px;
-    }
-    .anketa__text2{
-        margin-bottom: 30px;
-        margin-right: 160px;
-        width: 350px;
-    }
-    .anketa__input{
-        margin-left: 10px;
-        margin-right: 30px;
-        width: 340px;
-    }
-    .anketa__coment{
-        margin-left: 10px;
-        margin-right: 30px;
-        width: 340px;
-    }
-    .anketa__btn{
-        margin-left: 10px;
-        margin-right: 30px;
-        width: 365px;
-    }
-
-    .anketa__sent{
-        margin-right: 120px;
-    }
-
-
-    .feature__1{
-        align-items: center;
-        flex-direction: column;
-        margin-left: 50px;
-        padding-left: 20px;
-    .feature__txt1{
-        width: 290px;
-        margin-right: 70px;
-    }
-    .feature__txt2{
-        width: 290px;
-        margin-right: 70px;
-    }
-    }
-    .feature__2{
-        align-items: center;
-        flex-direction: column;
-        margin-left: 50px;
-        padding-left: 20px;
-    
-    .feature__txt3{
-        width: 290px;
-        margin-right: 70px;
-    }
-    .feature__txt4{
-        width: 290px;
-        margin-right: 70px;
-    }
-    }
-    .feature__3{
-        align-items: center;
-        flex-direction: column;
-        margin-left: 150px;
-        padding-right: 100px;
-        padding-left: 50px;
-        margin-bottom: 50px;
-    
-    .feature__image{
-        margin-bottom: 30px;
-        margin-left: 170px;
-        padding-right: 100px;
-        padding-left: 50px;
-        width: 7000px;
-    }
-    }
-    .feature__txt1{
-        margin-bottom: 30px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .feature__txt2{
-        margin-bottom: 30px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .feature__txt3{
-        margin-bottom: 30px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .feature__txt4{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
     .under{
-        align-items: center;
-        flex-direction: column;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-right: 50px;
-        padding-left: 50px;
+        &__txt1{
+            margin-right: 200px;
+        }
+        &__txt2{
+            margin-right: 200px;
+        }
     }
-    .under__txt1{
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 30px;
+    .anketa{
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+            margin-right: 0;
+        }
     }
-    .under__txt2{
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 30px;
-    }
-    .under__txt3{
-        margin-left: 0px;
-        margin-right: 0px;
+    .anketa__item-container{
         margin-bottom: 30px;
     }
 }
@@ -695,9 +624,78 @@ body {
     .container {
         max-width: 960px;
     }
+    .under{
+        &__txt1{
+            margin-right: 100px;
+        }
+        &__txt2{
+            margin-right: 100px;
+        }
+    }
+    .feature__txt1{
+        margin-right: 50px;
+    }
+    .feature__txt2{
+        margin-left: 50px;
+    }
+    .feature__txt3{
+        margin-right: 50px;
+    }
+    .feature__txt4{
+        margin-left: 50px;
+    }
+    
+
+
+
+
+
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .under{
+        justify-content: center;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
+    }
+    .feature__txt1{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .feature__txt2{
+        margin-left: 0;
+    }
+    .feature__txt3{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .feature__txt4{
+        margin-left: 0;
+    }
+    .feature__1{
+        
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feature__2{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .anketa{
+        margin-left: 125px;
+        &__item-container{
+            width: 100%;
+        }
+    }
+
     .head{
         align-items: center;
-        width: 350px;
         padding-right: 50px;
         padding-left: 0px;
         flex-direction: column;
@@ -708,60 +706,60 @@ body {
     }
     }
     .Rifles{
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
     }
     .Rifles__item{
         margin-bottom: 30px;
-        margin-right: 75px;
+
     }
-
-
-
     .Sniper_Rifles{
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
     }
     .Sniper_Rifles__item{
         margin-bottom: 30px;
-        margin-right: 75px;
     }
-  
-
-    .Pistols {
-        align-items: center;
-        flex-direction: column;
-      }
-      .Pistols__item{
+    .Pistols{
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
+    }
+    .Pistols__item{
         margin-bottom: 30px;
-        margin-right: 75px;
-      }
-    
-    
-    
-      .Knives {
-        align-items: center;
-        flex-direction: column;
-      }
-      .Knives__item{
+    }
+    .Knives{
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
+    }
+    .Knives__item{
         margin-bottom: 30px;
-        margin-right: 75px;
-      }
-    
-    
-    
-      .Gloves {
-        align-items: center;
-        flex-direction: column;
-      }
-      .Gloves__item{
+    }
+    .Gloves{
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+        &__item-container{
+            width: 50%;
+        }
+    }
+    .Gloves__item{
         margin-bottom: 30px;
-        margin-right: 75px;
-      }
-}
-@media (max-width: 991px) {
-    .container {
-        max-width: 720px;
     }
 }
 @media (max-width: 767px) {
@@ -772,5 +770,47 @@ body {
 @media (max-width: 575px) {    
     .container {
         max-width: 100%;
+    }
+    .anketa{
+        margin-left: 0;
+    }
+    .under{
+        &__item-container{
+            
+            width: 100%;
+        }
+        &__txt1{
+            margin-left: 0;
+        }
+    }
+    .Rifles{
+        justify-content: center;
+        &__item-container{
+            width: 75%;
+        }
+    }
+    .Sniper_Rifles{
+        justify-content: center;
+        &__item-container{
+            width: 75%;
+        }
+    }
+    .Pistols{
+        justify-content: center;
+        &__item-container{
+            width: 75%;
+        }
+    }
+    .Knives{
+        justify-content: center;
+        &__item-container{
+            width: 75%;
+        }
+    }
+    .Gloves{
+        justify-content: center;
+        &__item-container{
+            width: 75%;
+        }
     }
 }

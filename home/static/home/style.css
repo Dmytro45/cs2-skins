@@ -327,7 +327,6 @@ body {
   background-color: #2C3135;
   color: white;
   border-radius: 11px;
-  color: white;
   height: 175px;
   width: 415px;
   display: flex;
@@ -468,6 +467,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.feature__image img {
+  width: 60%;
 }
 
 .under {
@@ -686,10 +688,16 @@ body {
   .container {
     max-width: 540px;
   }
+  .feature__image img {
+    width: 75%;
+  }
 }
 @media (max-width: 575px) {
   .container {
     max-width: 100%;
+  }
+  .feature__image img {
+    width: 90%;
   }
   .anketa {
     margin-left: 0;

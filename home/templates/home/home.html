@@ -398,11 +398,11 @@
                 </div>
                 <div class="anketa__item-container">
                     <div class="anketa__sent">
-                        <input class="anketa__input" type="text" placeholder="Ваше ім’я">
-                        <input class="anketa__input" type="text" placeholder="E-mail">
-                        <input class="anketa__input" type="text" placeholder="Номер телефону">
-                        <textarea class="anketa__coment" type="text" placeholder="Коментар"></textarea>
-                        <button class="anketa__btn">
+                        <input class="anketa__input" type="text" placeholder="Ваше ім’я" id="name">
+                        <input class="anketa__input" type="text" placeholder="E-mail" id="email">
+                        <input class="anketa__input" type="text" placeholder="Номер телефону" id="phone_number">
+                        <textarea class="anketa__coment" type="text" placeholder="Коментар" id="coment"></textarea>
+                        <button class="anketa__btn" onclick="foo()" id="submit_form">
                             Надіслати
                         </button>
                     </div>
@@ -477,7 +477,7 @@
                 <div class="under__item-container">
                     <div class="under__txt2">
                         <span class="item">
-                            🅲 🆂 2 🆂 🅺 🅸 🅽 🆂
+                            🅲🆂 2 🆂🅺🅸🅽🆂
                         </span>
                         <span class="under__txt5">
                             FAQ
@@ -502,5 +502,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="{% static 'home/script.js' %}"></script>
     </body>
     </html>

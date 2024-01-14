@@ -9,6 +9,22 @@ function foo() {
     if (name !== "" && email !== "" && phone_number !== ""){
         var btn = document.getElementById("submit_form");
         btn.innerHTML = "Відправлено"
+
+        var formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("phone_number", phone_number);
+        formData.append("coment", coment);
+
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+            if (xmlHttp.status == 200) {
+                console.log("Дані форми були успішно відправлені.")
+            }                
+        }
+        xmlHttp.open("POST", "/order-form", true);
+        xmlHttp.send(formData);
+
     } 
     else {
         console.log("bad")

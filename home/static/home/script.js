@@ -20,6 +20,7 @@ function foo() {
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.status == 200) {
                 console.log("Дані форми були успішно відправлені.")
+                alert("Форма успішно відправлена!")
             }                
         }
         xmlHttp.open("POST", "/order-form", true);

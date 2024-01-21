@@ -1,6 +1,9 @@
+from ssl import AlertDescription
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
+from django.core.mail import send_mail
+
 from home.models import Car
 
 def home_view(request):
@@ -19,8 +22,22 @@ def order_form_view(request):
 
     print(f'{name}, {email}, {phone_number}, {coment}')
 
-    return HttpResponse(status=200)
+    send_mail(
+        "Subject here",
+        "Вітаю! Ми отримали ваше замовлення.....",
+        None,
+        [email],
+        fail_silently=False
+    )
+    send_mail(
+        "Subject here",
+        "Вітаю! У вас новий клієнт.....",
+        None,
+        ["dimapetrina2007@gmail.com"],
+        fail_silently=False
+    )
 
+    return HttpResponse(status=200)
 
 def home_view2(request):
     context = {

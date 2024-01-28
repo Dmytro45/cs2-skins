@@ -1,6 +1,8 @@
 from django.contrib import admin
 
 from home.models import Car, Mark, Color, Drive, Model
+from admin_singleton.admin import SingletonModelAdmin
+from home.models import Settings
 
 @admin.register(Mark)
 class MarkAdmin(admin.ModelAdmin):
@@ -22,3 +24,7 @@ class ColorAdmin(admin.ModelAdmin):
 class CarAdmin(admin.ModelAdmin):
    list_display = ['mark', 'model', 'price', 'color','year','drive']
    list_filter = ['mark',]
+
+@admin.register(Settings)
+class SettingsAdmin(SingletonModelAdmin):
+   pass

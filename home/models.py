@@ -1,5 +1,7 @@
 from django.db import models
 
+from admin_singleton.models import SingletonModel
+
 
 
 # Create your models here.
@@ -35,3 +37,8 @@ class Car(models.Model):
    year = models.IntegerField()
    price = models.IntegerField()
    
+class Settings(SingletonModel):
+   title = models.CharField(max_length=30)
+
+   def __str__(self):
+      return 'Налаштування домашньої сторінки'

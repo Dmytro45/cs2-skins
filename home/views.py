@@ -23,17 +23,24 @@ def order_form_view(request):
     print(f'{name}, {email}, {phone_number}, {coment}')
 
     send_mail(
-        "Subject here",
+        "Клієнту",
         "Вітаю! Ми отримали ваше замовлення.....",
         None,
         [email],
         fail_silently=False
     )
     send_mail(
-        "Subject here",
-        "Вітаю! У вас новий клієнт.....",
+        "Адміну",
+        "Вітаю! У вас нове велике замовлення.....",
         None,
         ["dimapetrina2007@gmail.com"],
+        fail_silently=False
+    )
+    send_mail(
+        "Помічнику адміна",
+        "Вітаю! У вас нове замовлення.....",
+        None,
+        ["llomudor.msk2009@gmail.com"],
         fail_silently=False
     )
 

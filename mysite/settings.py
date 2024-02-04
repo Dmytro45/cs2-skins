@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+PUBLIC_FILES = BASE_DIR / 'public_files'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = PUBLIC_FILES / 'media'
 
 # Application definition
 

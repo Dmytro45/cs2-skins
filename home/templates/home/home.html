@@ -27,69 +27,31 @@
         <div class="container">
             <div class="Rifles__text">
                 <h2>
-                    Rifles
+                    {{ title }}
                 </h2>
             </div>
             <div class="Rifles">
+                {% for RiflePage in RiflesPage %}
                 <div class="Rifles__item-container">
                     <div class="Rifles__item">
                         <div class="Rifles__item-preview">
-                            <img src="{% static 'home/images/image 1.png' %}" alt="">
+                            <img src="{{ RiflePage.picture.url }}" alt="">
                             <span>
-                                <span class="colortext">$</span> 14 890.50
+                                <span class="colortext">$</span> {{ RiflePage.price }}
                             </span>
                         </div>
                         <div class="Rifles__item-description">
                             <span class="skin">
-                                Gold Arabesque
+                                {{ RiflePage.model }}
                             </span>
                             <span>
-                                AK-47
+                                {{ RiflePage.name }}
                             </span>
                         </div>
                     </div>
                 </div>
-                <div class="Rifles__item-container">
-                    <div class="Rifles__item">
-                        <div class="Rifles__item-preview">
-                            <img src="{% static 'home/images/image 2.png' %}" alt="">
-                            <span>
-                                <span class="colortext">$</span> 6 500.00
-                            </span>
-                        </div>
-                        <div class="Rifles__item-description">
-                            <span class="skin">
-                                Howl
-                            </span>
-                            <span>
-                                M4A4
-                            </span>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="Rifles__item-container">
-                    <div class="Rifles__item">
-                        <div class="Rifles__item-preview">
-                            <img src="{% static 'home/images/image 3.png' %}" alt="">
-                            <span>
-                                <span class="colortext">$</span> 3 950.00 
-                            </span>
-                        </div>
-                        <div class="Rifles__item-description">
-                            <span class="skin">
-                                Knight
-                            </span>
-                            <span>
-                                M4A1-S
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
-        </div>
-
-
         
 
 
@@ -497,6 +459,9 @@
                         </span>
                         <span class="under__txt6">
                             cs2skins.support@gmail.com
+                        </span>
+                        <span class="under__txt6">
+                            {{ phone_number }}
                         </span>
                     </div>
                 </div>

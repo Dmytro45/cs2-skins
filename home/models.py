@@ -39,6 +39,16 @@ class Car(models.Model):
    
 class Settings(SingletonModel):
    title = models.CharField(max_length=30)
+   phone_number = models.CharField(max_length=30)
 
    def __str__(self):
       return 'Налаштування домашньої сторінки'
+
+class RiflesPage(models.Model):
+   picture = models.ImageField(upload_to="rifles_page", null=True)
+   price = models.CharField(max_length=10)
+   model = models.CharField(max_length=30)
+   name = models.CharField(max_length=30)
+
+   def __str__(self):
+      return self.name

@@ -48,3 +48,15 @@ def order_form_view(request):
     )
 
     return HttpResponse(status=200)
+@csrf_exempt
+def feedback_form_view(request):
+    name = request.POST.get('name', None)
+    feedback = request.POST.get('feedback', None)
+
+    send_mail(
+        "Адміну",
+        f"Вітаю! У вас новий відгук від користувача {name}: {feedback}",
+        None,
+        ["dimapetrina2007@gmail.com"],
+        fail_silently=False
+    )

@@ -31,3 +31,30 @@ function foo() {
         console.log("bad")
     }
 }
+function vidguk_foo() {
+    var vidguk__name = document.getElementById("vidguk__name").value;
+    var vidguk = document.getElementById("vidguk").value;
+    if (vidguk__name !== "" && vidguk !== ""){
+        var btn = document.getElementById("submit_form");
+        btn.innerHTML = "Відправлено"
+
+        var formData = new FormData();
+        formData.append("name", vidguk__name);
+        formData.append("feedback", vidguk);
+
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() {
+
+            if (xmlHttp.status == 200) {
+                console.log("Дані форми були успішно відправлені.")
+                alert("Форма успішно відправлена!")
+            }                
+        }
+        xmlHttp.open("POST", "/feedback-form", true);
+        xmlHttp.send(formData);
+
+    } 
+    else {
+        console.log("bad")
+    }
+}

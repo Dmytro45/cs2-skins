@@ -356,6 +356,71 @@ body {
   cursor: pointer;
 }
 
+.vidguk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161b20;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  width: 75%;
+  margin-left: 150px;
+}
+.vidguk__text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.vidguk__input {
+  background-color: #20272c;
+  color: white;
+  border-radius: 11px;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.vidguk__area {
+  background-color: #20272c;
+  color: white;
+  border-radius: 11px;
+  height: 300px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.vidguk__btn {
+  margin-top: 20px;
+  background-color: #33613E;
+  border-radius: 11px;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  transition: background-color 0.5s ease;
+  font-size: medium;
+  font-weight: 700;
+}
+.vidguk__btn:hover {
+  background-color: #218538;
+  cursor: pointer;
+}
+
 .feature {
   display: flex;
   flex-direction: column;
@@ -363,6 +428,7 @@ body {
   justify-content: center;
   background-color: #20282D;
   margin-bottom: 100px;
+  border-radius: 10px;
 }
 .feature__1 {
   display: flex;

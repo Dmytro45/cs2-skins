@@ -421,6 +421,18 @@ body {
   cursor: pointer;
 }
 
+.feedback {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #20282D;
+  font-size: x-large;
+}
+.feedback__description {
+  flex-direction: column;
+}
+
 .feature {
   display: flex;
   flex-direction: column;

@@ -4,14 +4,15 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 
-from home.models import RiflesPage, Settings
+from home.models import RiflesPage, Settings, Feedback
 
 def home_view(request):
     settings = Settings.load()
     context = {
         "title": settings.title,
         "phone_number": settings.phone_number,
-        "RiflesPage": RiflesPage.objects.all()
+        "RiflesPage": RiflesPage.objects.all(),
+        "feedbacks": Feedback.objects.all(),
     }
     
     return render(request, "home/home.html", context)
@@ -53,6 +54,10 @@ def feedback_form_view(request):
     name = request.POST.get('name', None)
     feedback = request.POST.get('feedback', None)
 
+    Feedback.objects.create(
+        user_name=name,
+        feedback_text=feedback
+    )
     send_mail(
         "Адміну",
         f"Вітаю! У вас новий відгук від користувача {name}: {feedback}",
@@ -60,3 +65,4 @@ def feedback_form_view(request):
         ["dimapetrina2007@gmail.com"],
         fail_silently=False
     )
+    return HttpResponse(status=200)

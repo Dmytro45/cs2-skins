@@ -43,7 +43,14 @@ class Settings(SingletonModel):
 
    def __str__(self):
       return 'Налаштування домашньої сторінки'
+   
+class Feedback(models.Model):
+   user_name = models.CharField(max_length=30)
+   feedback_text = models.CharField(max_length=1000)
 
+   def __str__(self):
+      return self.user_name
+   
 class RiflesPage(models.Model):
    picture = models.ImageField(upload_to="rifles_page", null=True)
    price = models.CharField(max_length=10)

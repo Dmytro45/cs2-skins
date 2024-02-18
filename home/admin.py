@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from home.models import Car, Mark, Color, Drive, Model, RiflesPage, Settings
+from home.models import Car, Mark, Color, Drive, Model, RiflesPage, Settings, Feedback
 from admin_singleton.admin import SingletonModelAdmin
 
 @admin.register(Mark)
@@ -26,6 +26,10 @@ class CarAdmin(admin.ModelAdmin):
 
 @admin.register(Settings)
 class SettingsAdmin(SingletonModelAdmin):
+   pass
+
+@admin.register(Feedback)
+class SettingsAdmin(admin.ModelAdmin):
    pass
 
 @admin.register(RiflesPage)

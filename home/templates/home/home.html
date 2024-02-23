@@ -386,15 +386,20 @@
         </div>
 
         <div class="container">
+            <div class="feedback__text">
+                <h2>
+                    Відгуки
+                </h2>
+            </div>
             <div class="feedback">
                 {% for feedback in feedbacks %}
-                    <div class="feedback__item-container">
-                        <div class="feedback__description">
-                            <span>
-                                Ім’я: {{ feedback.user_name }}
+                    <div class="feedback__description">
+                        <div class="feedback__items">
+                            <span class="feedback_name">
+                                {{ feedback.user_name }}:
                             </span>
-                            <span>
-                                Відгук: {{ feedback.feedback_text }}
+                            <span class="feedback_text">
+                                {{ feedback.feedback_text }}.
                             </span>
                         </div>
                     </div>

@@ -35,8 +35,8 @@ function vidguk_foo() {
     var vidguk__name = document.getElementById("vidguk__name").value;
     var vidguk = document.getElementById("vidguk").value;
     if (vidguk__name !== "" && vidguk !== ""){
-        var btn = document.getElementById("submit_form");
-        btn.innerHTML = "Відправлено"
+        var btn_feedback = document.getElementById("submit_vidguk");
+        btn_feedback.innerHTML = "Відправлено"
 
         var formData = new FormData();
         formData.append("name", vidguk__name);

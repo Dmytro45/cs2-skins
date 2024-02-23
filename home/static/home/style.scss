@@ -464,14 +464,33 @@ body {
 
 
 .feedback {
-    color: white;
     display: flex;
     flex-direction: column;
+    color: rgb(185, 185, 185);
     margin-top: 20px;
-    background-color: #20282D;
-    font-size: x-large;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #161b20;
     &__description{
-        flex-direction: column;
+        background-color: #28343d;
+        padding: 7px ;
+        width: max-content;
+        border-radius: 10px;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    &__text {
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    &__items{
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #20272e;
+        
     }
 }
 

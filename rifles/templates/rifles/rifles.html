@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="Rifles__text">
+        <h2>
+            {{ title }}
+        </h2>
+    </div>
+    <div class="Rifles">
+        {% for RiflePage in RiflesPage %}
+        <div class="Rifles__item-container">
+            <div class="Rifles__item">
+                <div class="Rifles__item-preview">
+                    <img src="{{ RiflePage.picture.url }}" alt="">
+                    <span>
+                        <span class="colortext">$</span> {{ RiflePage.price }}
+                    </span>
+                </div>
+                <div class="Rifles__item-description">
+                    <span class="skin">
+                        {{ RiflePage.model }}
+                    </span>
+                    <span>
+                        {{ RiflePage.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

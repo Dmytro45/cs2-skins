@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'admin_singleton',
 
     'home',
+    'rifles',
 ]
 
 MIDDLEWARE = [

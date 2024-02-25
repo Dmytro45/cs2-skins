@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cs2 skins</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <div class="logo">
+                    <img width="200" src="{% static 'home/images/logo.png' %}" alt="">
+                </div>
+                <div class="nav">
+                    <a href="/">Home</a>
+                    <a href="/rifles/">Rifles</a>
+                    <a href="#">Pistols</a>
+                    <a href="#">Knives</a>
+                    <a href="#">Gloves</a>
+                </div>
+            </div>
+        </div>
+
+        {% block content %} {% endblock %}
+ 
+        <div class="container">
+            <div class="under">
+                <div class="under__item-container">
+                    <div class="under__txt1">
+                        <span class="item">
+                            Про нас
+                        </span>
+                        <span class="under__txt4">
+                            Умови використання
+                        </span>
+                        <span class="under__txt4">
+                            Політика конфідеційності
+                        </span>
+                    </div>
+                </div>
+                <div class="under__item-container">
+                    <div class="under__txt2">
+                        <span class="item">
+                            🅲🆂2 🆂🅺🅸🅽🆂
+                        </span>
+                        <span class="under__txt5">
+                            FAQ
+                        </span>
+                        <span class="under__txt5">
+                            Про нас
+                        </span>
+                        <span class="under__txt5">
+                            Кар’ єра
+                        </span>
+                    </div>
+                </div>
+                <div class="under__item-container">
+                    <div class="under__txt3">
+                        <span class="item">
+                            Зв'язатися
+                        </span>
+                        <span class="under__txt6">
+                            cs2skins.support@gmail.com
+                        </span>
+                        <span class="under__txt6">
+                            {{ phone_number }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'home/script.js' %}"></script>
+    </body>
+    </html>

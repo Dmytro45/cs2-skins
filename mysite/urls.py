@@ -24,6 +24,7 @@ from mysite import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rifles/', include('rifles.urls')),
     path('', include('home.urls')),
 ]
 if settings.DEBUG:

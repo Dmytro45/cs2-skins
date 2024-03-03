@@ -1,0 +1,52 @@
+.skin {
+  font-weight: 700;
+  color: white;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.Rifles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
+}
+.Rifles__item-container {
+  width: 33.3333%;
+}
+.Rifles__text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.Rifles__item-preview {
+  background-color: #282F36;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium";
+  font-size: x-large;
+}
+.Rifles__item-preview img {
+  width: 100%;
+}
+.Rifles__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #20282D;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: 10px;
+}
+.Rifles__item-description {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: #ABAEB0;
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'sniper_rifles/style.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="Sniper_Rifles__text">
+        <h2>
+            Sniper_Rifles
+        </h2>
+    </div>
+    <div class="Sniper_Rifles">
+        {% for SniperRiflePage in SniperRiflesPage %}
+        <div class="Sniper_Rifles__item-container">
+            <div class="Sniper_Rifles__item">
+                <div class="Sniper_Rifles__item-preview">
+                    <img src="{{ SniperRiflePage.picture.url }}" alt="">
+                    <span>
+                        <span class="colortext">$</span> {{ SniperRiflePage.price }}
+                    </span>
+                </div>
+                <div class="Sniper_Rifles__item-description">
+                    <span class="skin">
+                        {{ SniperRiflePage.model }}
+                    </span>
+                    <span>
+                        {{ SniperRiflePage.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -24,8 +24,9 @@ from mysite import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('rifles/', include('rifles.urls')),
     path('', include('home.urls')),
+    path('rifles/', include('rifles.urls')),
+    path('sniper_rifles/', include('sniper_rifles.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

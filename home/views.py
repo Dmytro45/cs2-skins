@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.core.mail import send_mail
 
-from home.models import Feedback, RiflesPage, Settings
+from home.models import Feedback, RiflesPage, Settings, SniperRiflesPage
 
 def home_view(request):
     settings = Settings.load()
@@ -12,6 +12,7 @@ def home_view(request):
         "title": settings.title,
         "phone_number": settings.phone_number,
         "RiflesPage": RiflesPage.objects.all(),
+        "SniperRiflesPage": SniperRiflesPage.objects.all(),
         "feedbacks": Feedback.objects.all(),
     }
     

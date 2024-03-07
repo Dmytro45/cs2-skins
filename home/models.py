@@ -54,8 +54,16 @@ class Feedback(models.Model):
 class RiflesPage(models.Model):
    picture = models.ImageField(upload_to="rifles_page", null=True)
    price = models.CharField(max_length=10)
-   model = models.CharField(max_length=30)
-   name = models.CharField(max_length=30)
+   model = models.CharField(max_length=50)
+   name = models.CharField(max_length=50)
+
+   def __str__(self):
+      return self.name
+class SniperRiflesPage(models.Model):
+   picture = models.ImageField(upload_to="sniper_rifles_page", null=True)
+   price = models.CharField(max_length=10)
+   model = models.CharField(max_length=50)
+   name = models.CharField(max_length=50)
 
    def __str__(self):
       return self.name

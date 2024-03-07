@@ -35,7 +35,7 @@
         </div>
         {% endfor %}
     </div>
-    
+</div>
 <div class="container">
     <div class="Sniper_Rifles__text">
         <h2>
@@ -43,60 +43,26 @@
         </h2>
     </div>
     <div class="Sniper_Rifles">
+        {% for SniperRiflePage in SniperRiflesPage %}
         <div class="Sniper_Rifles__item-container">
             <div class="Sniper_Rifles__item">
                 <div class="Sniper_Rifles__item-preview">
-                    <img src="{% static 'home/images/image 4.png' %}" alt="">
+                    <img src="{{ SniperRiflePage.picture.url }}" alt="">
                     <span>
-                        <span class="colortext">$</span> 28 000.00
+                        <span class="colortext">$</span> {{ SniperRiflePage.price }}
                     </span>
                 </div>
                 <div class="Sniper_Rifles__item-description">
                     <span class="skin">
-                        Gungnir
+                        {{ SniperRiflePage.model }}
                     </span>
                     <span>
-                        AWP
+                        {{ SniperRiflePage.name }}
                     </span>
                 </div>
             </div>
         </div>
-        <div class="Sniper_Rifles__item-container">
-            <div class="Sniper_Rifles__item">
-                <div class="Sniper_Rifles__item-preview">
-                    <img src="{% static 'home/images/image 5.png' %}" alt="">
-                    <span>
-                        <span class="colortext">$</span> 1 215.44
-                    </span>
-                </div>
-                <div class="Sniper_Rifles__item-description">
-                    <span class="skin">
-                        Death Strike
-                    </span>
-                    <span>
-                        SSG 08
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="Sniper_Rifles__item-container">
-            <div class="Sniper_Rifles__item">
-                <div class="Sniper_Rifles__item-preview">
-                    <img src="{% static 'home/images/image 6.png' %}" alt="">
-                    <span>
-                        <span class="colortext">$</span> 233.03
-                    </span>
-                </div>
-                <div class="Sniper_Rifles__item-description">
-                    <span class="skin">
-                        Chronos
-                    </span>
-                    <span>
-                        G3SG1
-                    </span>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </div>
 

@@ -374,7 +374,14 @@
         </div>
         <div class="feature__item-container">
             <div class="feature__image">
-                <img width="605px" src="{% static 'home/images/image 17.png' %}" alt="">
+                <picture>
+                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 17.webp' %}" type="image/webp">
+                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 17.png' %}" type="image/png">
+
+                    <source srcset="{% static 'home/images/image 17_medium.webp' %}" type="image/webp">
+                    <img src="{% static 'home/images/image 17_medium.png' %}" alt="">
+                </picture>
+                
             </div>
         </div>
         <div class="feature__item-container">

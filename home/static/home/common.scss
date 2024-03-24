@@ -6,11 +6,13 @@ body {
     background-color: #1D2328;
     margin: 0;
     font-family: Arial;
-    
+
 }
+
 .colortext {
     color: #2FAF88;
 }
+
 .head {
     background-color: #282F36;
     display: flex;
@@ -26,8 +28,53 @@ body {
     text-decoration: none;
     margin-right: 125px;
 }
+
 .logo {
     margin: 25px;
+}
+
+.burger {
+    &__open {
+        background-color: transparent;
+        border: 0;
+    }
+    &__close{
+        position: fixed;
+        top: 35px;
+        left: 95px;
+        background-color: transparent;
+        border: 0;
+    }
+
+    &__menu {
+        &.hide {
+            display: none;
+        }
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(22, 26, 32);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                color: white;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+
+    }
 }
 
 .under {
@@ -36,132 +83,160 @@ body {
     display: flex;
     flex-direction: row;
     color: white;
-    
-    &__item-container{
+
+    &__item-container {
         width: 33.3333%;
     }
 
     &__text1 {
         margin-bottom: 20px;
     }
+
     &__txt1 {
         display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
+        flex-direction: column;
+        padding-left: 20px;
         padding-top: 20px;
         margin-right: 300px;
         margin-left: 50px;
     }
+
     &__txt2 {
         display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
+        flex-direction: column;
+        padding-left: 20px;
         padding-top: 20px;
         margin-right: 300px;
     }
+
     &__txt3 {
         display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
+        flex-direction: column;
+        padding-left: 20px;
         padding-top: 20px;
     }
+
     &__txt4 {
         padding-top: 10px;
         padding-bottom: 5px;
         color: #585A5C;
         font-size: small;
     }
-    
+
     &__txt5 {
         padding-top: 10px;
         padding-bottom: 5px;
         color: #585A5C;
         font-size: small;
     }
-    
+
     &__txt6 {
         padding-top: 10px;
         padding-bottom: 5px;
         color: #585A5C;
         font-size: small;
     }
+
     &__item {
         color: white;
     }
 }
+
 .container {
     max-width: 1320px;
-    padding-right: 0,75rem;
-    padding-left: 0,75rem;
+    padding-right: 0, 75rem;
+    padding-left: 0, 75rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
 }
 
 @media (max-width: 1399px) {
     .container {
         max-width: 1140px;
-    }    
-    .under{
-        &__txt1{
+    }
+
+    .under {
+        &__txt1 {
             margin-right: 200px;
         }
-        &__txt2{
+
+        &__txt2 {
             margin-right: 200px;
         }
     }
 }
+
 @media (max-width: 1199px) {
     .container {
         max-width: 960px;
     }
-    .under{
-        &__txt1{
+
+    .under {
+        &__txt1 {
             margin-right: 100px;
         }
-        &__txt2{
+
+        &__txt2 {
             margin-right: 100px;
         }
     }
 }
+
 @media (max-width: 991px) {
     .container {
         max-width: 720px;
     }
-    .under{
+
+    .under {
         justify-content: center;
         flex-wrap: wrap;
-        &__item-container{
+
+        &__item-container {
             width: 50%;
         }
     }
 
-    .head{
+    .head {
         align-items: center;
         padding-right: 50px;
         padding-left: 0px;
         flex-direction: column;
 
-    .nav a{
-        margin-left: 20px;
-        margin-right: 0px;
-    }
+        .nav a {
+            margin-left: 20px;
+            margin-right: 0px;
+        }
     }
 }
+
 @media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
+
+    .head>.nav {
+        display: none;
+    }
 }
-@media (max-width: 575px) {    
+
+@media (max-width: 575px) {
     .container {
         max-width: 100%;
     }
-    .under{
-        &__item-container{
-            
+
+    .under {
+        &__item-container {
+
             width: 100%;
         }
-        &__txt1{
+
+        &__txt1 {
             margin-left: 0;
         }
     }

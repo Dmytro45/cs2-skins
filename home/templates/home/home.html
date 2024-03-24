@@ -215,7 +215,14 @@
         <div class="Gloves__item-container">
             <div class="Gloves__item">
                 <div class="Gloves__item-preview">
-                    <img src="{% static 'home/images/image 13.png' %}" alt="">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 13.webp' %}"
+                            type="image/webp">
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 13.png' %}" type="image/png">
+    
+                        <source srcset="{% static 'home/images/image 13_medium.webp' %}" type="image/webp">
+                        <img src="{% static 'home/images/image 13_medium.png' %}" alt="">
+                    </picture>
                     <span>
                         <span class="colortext">$</span> 11 000.00
                     </span>
@@ -233,7 +240,14 @@
         <div class="Gloves__item-container">
             <div class="Gloves__item">
                 <div class="Gloves__item-preview">
-                    <img src="{% static 'home/images/image 14.png' %}" alt="">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 14.webp' %}"
+                            type="image/webp">
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 14.png' %}" type="image/png">
+    
+                        <source srcset="{% static 'home/images/image 14_medium.webp' %}" type="image/webp">
+                        <img src="{% static 'home/images/image 14_medium.png' %}" alt="">
+                    </picture>
                     <span>
                         <span class="colortext">$</span> 19 524.06
                     </span>
@@ -252,7 +266,14 @@
         <div class="Gloves__item-container">
             <div class="Gloves__item">
                 <div class="Gloves__item-preview">
-                    <img src="{% static 'home/images/image 15.png' %}" alt="">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 15.webp' %}"
+                            type="image/webp">
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 15.png' %}" type="image/png">
+    
+                        <source srcset="{% static 'home/images/image 15_medium.webp' %}" type="image/webp">
+                        <img src="{% static 'home/images/image 15_medium.png' %}" alt="">
+                    </picture>
                     <span>
                         <span class="colortext">$</span> 2 334.91
                     </span>
@@ -283,7 +304,14 @@
     <div class="anketa">
         <div class="anketa__item-container">
             <div class="anketa__image">
-                <img width="425px" src="{% static 'home/images/image 16.png' %}" alt="">
+                <picture>
+                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.webp' %}"
+                        type="image/webp">
+                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.png' %}" type="image/png">
+
+                    <source srcset="{% static 'home/images/image 16_medium.webp' %}" type="image/webp">
+                    <img src="{% static 'home/images/image 16_medium.png' %}" alt="">
+                </picture>
             </div>
         </div>
         <div class="anketa__item-container">
@@ -318,20 +346,21 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="vidguk__text">
+        <h2>
+            Поділіться своїми враженнями
+        </h2>
+    </div>
 
-<div class="vidguk__text">
-    <h2>
-        Поділіться своїми враженнями
-    </h2>
+    <div class="vidguk">
+        <input class="vidguk__input" type="text" placeholder="Ваше ім’я" id="vidguk__name">
+        <textarea class="vidguk__area" type="text" placeholder="Відгук" id="vidguk"></textarea>
+        <button class="vidguk__btn" onclick="vidguk_foo()" id="submit_vidguk">
+            Надіслати
+        </button>
+    </div>
 </div>
-<div class="vidguk">
-    <input class="vidguk__input" type="text" placeholder="Ваше ім’я" id="vidguk__name">
-    <textarea class="vidguk__area" type="text" placeholder="Відгук" id="vidguk"></textarea>
-    <button class="vidguk__btn" onclick="vidguk_foo()" id="submit_vidguk">
-        Надіслати
-    </button>
-</div>
-
 <div class="container">
     <div class="feedback__text">
         <h2>
@@ -375,13 +404,13 @@
         <div class="feature__item-container">
             <div class="feature__image">
                 <picture>
-                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 17.webp' %}" type="image/webp">
+                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 17.webp' %}"
+                        type="image/webp">
                     <source media="(min-width:768px)" srcset="{% static 'home/images/image 17.png' %}" type="image/png">
 
                     <source srcset="{% static 'home/images/image 17_medium.webp' %}" type="image/webp">
                     <img src="{% static 'home/images/image 17_medium.png' %}" alt="">
                 </picture>
-                
             </div>
         </div>
         <div class="feature__item-container">

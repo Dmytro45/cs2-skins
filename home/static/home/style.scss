@@ -354,7 +354,7 @@ body {
         color: white;
         border-radius: 11px;
         height: 40px;
-        width: 415px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -367,7 +367,7 @@ body {
         color: white;
         border-radius: 11px;
         height: 175px;
-        width: 415px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -379,7 +379,7 @@ body {
         background-color: #33613E;
         border-radius: 11px;
         height: 50px;
-        width: 440px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -505,6 +505,7 @@ body {
     background-color: #20282D;
     margin-bottom: 100px;
     border-radius: 10px;
+    margin: 0 auto;
     &__1 {
         display: flex;
         flex-direction: row;
@@ -610,8 +611,11 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        img{
+        picture{
             width: 60%;
+            img {
+                width: 100%;
+            }
         }
     }
 }

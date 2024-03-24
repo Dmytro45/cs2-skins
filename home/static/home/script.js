@@ -1,3 +1,13 @@
+let burgerToggles = document.querySelectorAll(".burger__toggle");
+let burgerMenu = document.querySelector(".burger__menu");
+
+for (let burgerToggle of burgerToggles) {
+    burgerToggle.addEventListener("click", function() {
+        burgerMenu.classList.toggle("hide");
+    });
+}
+
+
 function foo() {
     console.log("hello")
     var name = document.getElementById("name").value;

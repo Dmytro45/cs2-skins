@@ -1,82 +1,114 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>cs2 skins</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'home/common.css' %}">
 
-        <link rel="icon" type="image/x-icon" href="{% static 'icon.ico' %}">
-        {% block styles %} {% endblock %}
-    </head>
-    <body>
-        <div class="container">
-            <div class="head">
-                <div class="logo">
-                    <a href="/"><img width="200" src="{% static 'home/images/logo.png' %}" alt=""></a>
-                    
-                </div>
-                <div class="nav">
-                    <a href="/rifles/">Rifles</a>
-                    <a href="/sniper_rifles/">Sniper Rifles</a>
-                    <a href="#">Pistols</a>
-                    <a href="#">Knives</a>
-                    <a href="#">Gloves</a>
-                </div>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs2 skins</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/common.css' %}">
 
-        {% block content %} {% endblock %}
- 
-        <div class="container">
-            <div class="under">
-                <div class="under__item-container">
-                    <div class="under__txt1">
-                        <span class="item">
-                            Про нас
-                        </span>
-                        <span class="under__txt4">
-                            Умови використання
-                        </span>
-                        <span class="under__txt4">
-                            Політика конфідеційності
-                        </span>
-                    </div>
-                </div>
-                <div class="under__item-container">
-                    <div class="under__txt2">
-                        <span class="item">
-                            🅲🆂2 🆂🅺🅸🅽🆂
-                        </span>
-                        <span class="under__txt5">
-                            FAQ
-                        </span>
-                        <span class="under__txt5">
-                            Про нас
-                        </span>
-                        <span class="under__txt5">
-                            Кар’ єра
-                        </span>
-                    </div>
-                </div>
-                <div class="under__item-container">
-                    <div class="under__txt3">
-                        <span class="item">
-                            Зв'язатися
-                        </span>
-                        <span class="under__txt6">
-                            cs2skins.support@gmail.com
-                        </span>
-                        <span class="under__txt6">
-                            {{ phone_number }}
-                        </span>
+    <link rel="icon" type="image/x-icon" href="{% static 'icon.ico' %}">
+    {% block styles %} {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+
+            <div class="burger">
+                <button class="burger__toggle burger__open">
+                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"
+                        stroke-linecap="butt" stroke-linejoin="arcs">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+
+                </button>
+                <div class="burger__menu hide">
+                    <button class="burger__toggle burger__close">
+                        <svg fill="#ffffff" height="30px" width="30px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve">
+                            <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490
+489.292,457.678 277.331,245.004 489.292,32.337 " />
+                        </svg>
+
+                    </button>
+                    <div class="nav">
+                        <a href="/rifles/">Rifles</a>
+                        <a href="/sniper_rifles/">Sniper Rifles</a>
+                        <a href="#">Pistols</a>
+                        <a href="#">Knives</a>
+                        <a href="#">Gloves</a>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="logo">
+                <a href="/"><img width="200" src="{% static 'home/images/logo.png' %}" alt=""></a>
 
-        <script src="{% static 'home/script.js' %}"></script>
-    </body>
-    </html>
+            </div>
+            <div class="nav">
+                <a href="/rifles/">Rifles</a>
+                <a href="/sniper_rifles/">Sniper Rifles</a>
+                <a href="#">Pistols</a>
+                <a href="#">Knives</a>
+                <a href="#">Gloves</a>
+            </div>
+        </div>
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <div class="container">
+        <div class="under">
+            <div class="under__item-container">
+                <div class="under__txt1">
+                    <span class="item">
+                        Про нас
+                    </span>
+                    <span class="under__txt4">
+                        Умови використання
+                    </span>
+                    <span class="under__txt4">
+                        Політика конфідеційності
+                    </span>
+                </div>
+            </div>
+            <div class="under__item-container">
+                <div class="under__txt2">
+                    <span class="item">
+                        🅲🆂2 🆂🅺🅸🅽🆂
+                    </span>
+                    <span class="under__txt5">
+                        FAQ
+                    </span>
+                    <span class="under__txt5">
+                        Про нас
+                    </span>
+                    <span class="under__txt5">
+                        Кар’ єра
+                    </span>
+                </div>
+            </div>
+            <div class="under__item-container">
+                <div class="under__txt3">
+                    <span class="item">
+                        Зв'язатися
+                    </span>
+                    <span class="under__txt6">
+                        cs2skins.support@gmail.com
+                    </span>
+                    <span class="under__txt6">
+                        {{ phone_number }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'home/script.js' %}"></script>
+</body>
+
+</html>

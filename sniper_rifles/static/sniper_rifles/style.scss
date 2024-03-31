@@ -55,3 +55,33 @@
     }
     
 }
+@media (max-width: 991px) {
+    .Sniper_Rifles {
+        justify-content: center;
+        margin-left: 0;
+        flex-wrap: wrap;
+
+        &__item-container {
+            width: 50%;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .Sniper_Rifles {
+        justify-content: center;
+
+        &__item-container {
+            width: 75%;
+        }
+
+        &__item {
+            margin-right: 0;
+        }
+    }
+}

@@ -49,4 +49,29 @@
   padding: 10px;
   color: #ABAEB0;
   font-size: small;
+}
+
+@media (max-width: 991px) {
+  .Sniper_Rifles {
+    justify-content: center;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .Sniper_Rifles__item-container {
+    width: 50%;
+  }
+  .Sniper_Rifles__item {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .Sniper_Rifles {
+    justify-content: center;
+  }
+  .Sniper_Rifles__item-container {
+    width: 75%;
+  }
+  .Sniper_Rifles__item {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

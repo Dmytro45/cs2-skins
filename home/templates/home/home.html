@@ -218,8 +218,9 @@
                     <picture>
                         <source media="(min-width:768px)" srcset="{% static 'home/images/image 13.webp' %}"
                             type="image/webp">
-                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 13.png' %}" type="image/png">
-    
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 13.png' %}"
+                            type="image/png">
+
                         <source srcset="{% static 'home/images/image 13_medium.webp' %}" type="image/webp">
                         <img src="{% static 'home/images/image 13_medium.png' %}" alt="">
                     </picture>
@@ -243,8 +244,9 @@
                     <picture>
                         <source media="(min-width:768px)" srcset="{% static 'home/images/image 14.webp' %}"
                             type="image/webp">
-                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 14.png' %}" type="image/png">
-    
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 14.png' %}"
+                            type="image/png">
+
                         <source srcset="{% static 'home/images/image 14_medium.webp' %}" type="image/webp">
                         <img src="{% static 'home/images/image 14_medium.png' %}" alt="">
                     </picture>
@@ -269,8 +271,9 @@
                     <picture>
                         <source media="(min-width:768px)" srcset="{% static 'home/images/image 15.webp' %}"
                             type="image/webp">
-                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 15.png' %}" type="image/png">
-    
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 15.png' %}"
+                            type="image/png">
+
                         <source srcset="{% static 'home/images/image 15_medium.webp' %}" type="image/webp">
                         <img src="{% static 'home/images/image 15_medium.png' %}" alt="">
                     </picture>
@@ -303,45 +306,52 @@
     </div>
     <div class="anketa">
         <div class="anketa__item-container">
-            <div class="anketa__image">
-                <picture>
-                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.webp' %}"
-                        type="image/webp">
-                    <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.png' %}" type="image/png">
+            <div class="anketa__item-content">
+                <div class="anketa__image">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.webp' %}"
+                            type="image/webp">
+                        <source media="(min-width:768px)" srcset="{% static 'home/images/image 16.png' %}"
+                            type="image/png">
 
-                    <source srcset="{% static 'home/images/image 16_medium.webp' %}" type="image/webp">
-                    <img src="{% static 'home/images/image 16_medium.png' %}" alt="">
-                </picture>
+                        <source srcset="{% static 'home/images/image 16_medium.webp' %}" type="image/webp">
+                        <img src="{% static 'home/images/image 16_medium.png' %}" alt="">
+                    </picture>
+                </div>
             </div>
         </div>
         <div class="anketa__item-container">
-            <div class="anketa__text2">
-                <span class="anketa__item1">
-                    Як отримати скіни
-                </span>
-                <span class="anketa__txt">
-                    1. Залишити заявку.
-                </span>
-                <span class="anketa__txt">
-                    2. Зачекати відповіді продавця.
-                </span>
-                <span class="anketa__txt">
-                    3. Зробити все, що скаже продавець
-                </span>
-                <span class="anketa__txt">
-                    4. Отримати скіни.
-                </span>
+            <div class="anketa__item-content">
+                <div class="anketa__text2">
+                    <span class="anketa__item1">
+                        Як отримати скіни
+                    </span>
+                    <span class="anketa__txt">
+                        1. Залишити заявку.
+                    </span>
+                    <span class="anketa__txt">
+                        2. Зачекати відповіді продавця.
+                    </span>
+                    <span class="anketa__txt">
+                        3. Зробити все, що скаже продавець
+                    </span>
+                    <span class="anketa__txt">
+                        4. Отримати скіни.
+                    </span>
+                </div>
             </div>
         </div>
         <div class="anketa__item-container">
-            <div class="anketa__sent">
-                <input class="anketa__input" type="text" placeholder="Ваше ім’я" id="name">
-                <input class="anketa__input" type="text" placeholder="E-mail" id="email">
-                <input class="anketa__input" type="text" placeholder="Номер телефону" id="phone_number">
-                <textarea class="anketa__coment" type="text" placeholder="Коментар" id="coment"></textarea>
-                <button class="anketa__btn" onclick="foo()" id="submit_form">
-                    Надіслати
-                </button>
+            <div class="anketa__item-content">
+                <div class="anketa__sent">
+                    <input class="anketa__input" type="text" placeholder="Ваше ім’я" id="name">
+                    <input class="anketa__input" type="text" placeholder="E-mail" id="email">
+                    <input class="anketa__input" type="text" placeholder="Номер телефону" id="phone_number">
+                    <textarea class="anketa__coment" type="text" placeholder="Коментар" id="coment"></textarea>
+                    <button class="anketa__btn" onclick="foo()" id="submit_form">
+                        Надіслати
+                    </button>
+                </div>
             </div>
         </div>
     </div>

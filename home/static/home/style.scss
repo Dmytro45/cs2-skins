@@ -11,25 +11,6 @@ body {
 .colortext {
     color: #2FAF88;
 }
-.head {
-    background-color: #282F36;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-.nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-right: 125px;
-}
-
-.logo {
-    margin: 25px;
-}
 .skin {
     font-weight: 700;
     color: white;
@@ -309,8 +290,12 @@ body {
     flex-direction: row;
     justify-content: center;
     &__item-container{
-        width: 33.3333%;
-        margin-right: 40px;
+        width: 33.3333%;               
+    }
+    &__item-content {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
     }
     &__text {
         color: white;
@@ -401,13 +386,14 @@ body {
 .vidguk {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: #161b20;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
-    width: 75%;
-    margin-left: 150px;
+
+
     &__text{
         color: white;
         display: flex;
@@ -493,6 +479,7 @@ body {
         background-color: #20272e;
         
     }
+    
 }
 
 
@@ -506,6 +493,18 @@ body {
     margin-bottom: 100px;
     border-radius: 10px;
     margin: 0 auto;
+    &__image {
+        background-color: #20282D;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        picture{
+            width: 65%;
+            img {
+                width: 100%;
+            }
+        }
+    }
     &__1 {
         display: flex;
         flex-direction: row;
@@ -606,18 +605,7 @@ body {
         width: 350px;
         border-radius: 15px;
     }
-    &__image {
-        background-color: #20282D;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        picture{
-            width: 60%;
-            img {
-                width: 100%;
-            }
-        }
-    }
+
 }
 
 
@@ -629,88 +617,29 @@ body {
 
 
 
-.under {
-    margin-top: 100px;
-    background-color: #15191C;
-    display: flex;
-    flex-direction: row;
-    color: white;
-    
-    &__item-container{
-        width: 33.3333%;
-    }
 
-    &__text1 {
-        margin-bottom: 20px;
-    }
-    &__txt1 {
-        display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
-        padding-top: 20px;
-        margin-right: 300px;
-        margin-left: 50px;
-    }
-    &__txt2 {
-        display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
-        padding-top: 20px;
-        margin-right: 300px;
-    }
-    &__txt3 {
-        display: flex;
-        flex-direction: column;   
-        padding-left: 20px; 
-        padding-top: 20px;
-    }
-    &__txt4 {
-        padding-top: 10px;
-        padding-bottom: 5px;
-        color: #585A5C;
-        font-size: small;
-    }
-    
-    &__txt5 {
-        padding-top: 10px;
-        padding-bottom: 5px;
-        color: #585A5C;
-        font-size: small;
-    }
-    
-    &__txt6 {
-        padding-top: 10px;
-        padding-bottom: 5px;
-        color: #585A5C;
-        font-size: small;
-    }
-    &__item {
-        color: white;
-    }
-}
 
 .container {
     max-width: 1320px;
-    padding-right: 0,75 rem;
-    padding-left: 0,75 rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
     margin-right: auto;
     margin-left: auto;
 }
 
 
 
-@media (max-width: 1399px) {
+@media (max-width: 1499px) {
     .anketa{
         flex-wrap: wrap;
         &__item-container{
             width: 50%;
             margin-right: 0;
+            margin-bottom: 30px;
         }
     }
-    .anketa__item-container{
-        margin-bottom: 30px;
     }
-}
+       
 @media (max-width: 1199px) {
     .feature__txt1{
         margin-right: 50px;
@@ -758,7 +687,7 @@ body {
     }
 
     .anketa{
-        margin-left: 125px;
+        justify-content: center;
         &__item-container{
             width: 100%;
         }
@@ -821,16 +750,13 @@ body {
     }
 }
 @media (max-width: 767px) {
-    .feature__image{
-        img{
-            width: 75%;
-        }
-    }
 }
 @media (max-width: 575px) {    
-    .feature__image{
-        img{
-            width: 90%;
+
+    .feedback{
+        &__description {
+            width: 100%;
+            
         }
     }
     .anketa{
@@ -841,11 +767,18 @@ body {
         &__item-container{
             width: 75%;
         }
+        
+        &__item {
+            margin-right: 0;
+        }
     }
     .Sniper_Rifles{
         justify-content: center;
         &__item-container{
             width: 75%;
+        }
+        &__item {
+            margin-right: 0;
         }
     }
     .Pistols{
@@ -853,17 +786,37 @@ body {
         &__item-container{
             width: 75%;
         }
+        &__item {
+            margin-right: 0;
+        }
     }
     .Knives{
         justify-content: center;
         &__item-container{
             width: 75%;
         }
+        &__item {
+            margin-right: 0;
+        }
     }
     .Gloves{
         justify-content: center;
         &__item-container{
             width: 75%;
+        }
+        &__item {
+            margin-right: 0;
+        }
+    }
+    .vidguk{
+        &__input{
+            width: 90%;
+        }
+        &__area{
+            width: 90%;
+        }
+        &__btn{
+            width: 90%;
         }
     }
 }

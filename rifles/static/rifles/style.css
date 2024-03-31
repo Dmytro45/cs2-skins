@@ -49,4 +49,29 @@
   padding: 10px;
   color: #ABAEB0;
   font-size: small;
+}
+
+@media (max-width: 991px) {
+  .Rifles {
+    justify-content: center;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .Rifles__item-container {
+    width: 50%;
+  }
+  .Rifles__item {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .Rifles {
+    justify-content: center;
+  }
+  .Rifles__item-container {
+    width: 75%;
+  }
+  .Rifles__item {
+    margin-right: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
